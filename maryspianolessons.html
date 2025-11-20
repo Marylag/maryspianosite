@@ -1,280 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Piano Lessons in Bowling Green, KY | Mariia Lahuta</title>
 
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background: #FFF7EF url("https://images.unsplash.com/photo-1613268412996-696f6718ee3a?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
-        no-repeat fixed center bottom;
-      background-size: cover;
-      color: #4B3B2F;
-    }
-
-    /* 🔥 NEW — blurred overlay */
-    .bg-blur {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: inherit;
-      background-size: cover;
-      filter: blur(10px) brightness(1.05);
-      z-index: -1;
-    }
-
-    header {
-      background: linear-gradient(135deg, #FFCBAA, #FFB48A);
-      color: #4B3B2F;
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.4rem;
-      font-weight: 700;
-    }
-
-    header p {
-      margin-top: 10px;
-      font-size: 1.2rem;
-    }
-
-    section {
-      padding: 50px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      font-size: 1.9rem;
-      margin-bottom: 20px;
-      color: #8A5A44;
-    }
-
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .card {
-      background: #FFFFFF;
-      padding: 25px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-      border-radius: 15px;
-      flex: 1;
-      min-width: 260px;
-      border: 1px solid #F3D4C2;
-    }
-
-    .card h3 {
-      color: #A0654C;
-    }
-
-    a.button, button.button {
-      display: inline-block;
-      background: #FFB48A;
-      color: #4B3B2F;
-      padding: 12px 20px;
-      border-radius: 10px;
-      text-decoration: none;
-      margin-top: 15px;
-      border: none;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-
-    a.button:hover, button.button:hover {
-      background: #FF9F6F;
-    }
-
-    input, textarea {
-      font-size: 1rem;
-      background: #FFF;
-      border: 1px solid #E7C8B4;
-      padding: 12px;
-      border-radius: 10px;
-    }
-
-    footer {
-      background: #FFB48A;
-      color: #4B3B2F;
-      text-align: center;
-      padding: 20px 25px;
-      font-weight: 600;
-      margin-top: 0;
-    }
-
-    /* Fade animation */
-    .fade {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.8s ease, transform 0.8s ease;
-    }
-    .fade.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* Cute notes */
-    .note {
-      position: fixed;
-      font-size: 2rem;
-      color: rgba(255, 150, 120, 0.7);
-      animation: floatUp 8s linear infinite;
-      pointer-events: none;
-      z-index: 9999;
-    }
-    @keyframes floatUp {
-      0% { transform: translateY(0) rotate(0deg); opacity: 1; }
-      100% { transform: translateY(-120vh) rotate(360deg); opacity: 0; }
-    }
-
-    /* Piano footer */
-    .piano-footer {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      height: 90px;
-      background: #4B3B2F;
-      margin: 0;
-      padding: 0;
-      transform: rotate(180deg);
-    }
-    .key {
-      border: 1px solid #3a2e25;
-    }
-    .white {
-      width: 50px;
-      height: 100%;
-      background: white;
-    }
-    .black {
-      width: 30px;
-      height: 60px;
-      background: black;
-      margin: 0 -15px;
-      z-index: 2;
-      border-radius: 0 0 4px 4px;
-    }
-  </style>
+  <!-- LINK TO EXTERNAL CSS (make sure style.css is in the same folder) -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<!-- 🔥 NEW blurred overlay -->
-<div class="bg-blur"></div>
+  <!-- blurred background overlay (keeps the background image but blurred) -->
+  <div class="bg-blur"></div>
 
-<header>
-  <h1>Piano Lessons in Bowling Green, KY</h1>
-  <p>With Mariia Lahuta — Master's degree in Music Composition, 10+ years of teaching experience</p>
-</header>
+  <header>
+    <h1>Piano Lessons in Bowling Green, KY</h1>
+    <p>With Mariia Lahuta — Master's degree in Music Composition, 10+ years of teaching experience</p>
+  </header>
 
-<section class="fade">
-  <h2>🎵 About Me</h2>
-  <p>I am Mariia Lahuta, a private piano teacher with over 10 years of experience. I hold a Master’s degree in Music Composition and teach students of all ages. Lessons are calm, friendly, and structured.</p>
-</section>
+  <section class="fade">
+    <h2>🎵 About Me</h2>
+    <p>I am Mariia Lahuta, a private piano teacher with over 10 years of experience. I hold a Master’s degree in Music Composition and teach students of all ages. Lessons are calm, friendly, and structured.</p>
+  </section>
 
-<section class="fade" style="text-align:center;">
-  <img src="https://i.imgur.com/wdLKQdj.jpeg"
-       style="width:350px; max-width:92%; border-radius:30px; box-shadow:0 8px 25px rgba(0,0,0,0.28); border:6px solid #FFE8D9;" />
-</section>
+  <section class="fade" style="text-align:center;">
+    <img src="https://i.imgur.com/wdLKQdj.jpeg"
+         style="width:350px; max-width:92%; border-radius:30px; box-shadow:0 8px 25px rgba(0,0,0,0.28); border:6px solid #FFE8D9;" />
+  </section>
 
-<section class="fade">
-  <h2>🎹 Lessons Offered</h2>
-  <div class="container">
-    <div class="card">
-      <h3>Beginner Piano</h3>
-      <p>For children or adults starting their musical journey — notes, rhythm, fun songs.</p>
+  <section class="fade">
+    <h2>🎹 Lessons Offered</h2>
+    <div class="container">
+      <div class="card">
+        <h3>Beginner Piano</h3>
+        <p>For children or adults starting their musical journey — notes, rhythm, fun songs.</p>
+      </div>
+      <div class="card">
+        <h3>Intermediate</h3>
+        <p>Technique, expression, classical pieces, pop songs, strong fundamentals.</p>
+      </div>
+      <div class="card">
+        <h3>Music Theory</h3>
+        <p>Music theory and composition basics also available.</p>
+      </div>
     </div>
-    <div class="card">
-      <h3>Intermediate</h3>
-      <p>Technique, expression, classical pieces, pop songs, strong fundamentals.</p>
-    </div>
-    <div class="card">
-      <h3>Music Theory</h3>
-      <p>Music theory and composition basics also available.</p>
-    </div>
+  </section>
+
+  <section class="fade">
+    <h2>💰 Pricing</h2>
+    <ul>
+      <li>30-minute lesson — $30</li>
+      <li>45-minute lesson — $45</li>
+    </ul>
+    <p>Lessons are once or twice per week.</p>
+  </section>
+
+  <section class="fade">
+    <h2>📍 Location & Format</h2>
+    <p>Lessons are in Bowling Green, KY at my home studio. Online lessons via Zoom are available.</p>
+  </section>
+
+  <section class="fade">
+    <h2>✉️ Contact Me</h2>
+    <p>Email: <strong>laguta113@gmail.com</strong></p>
+    <p>Phone: <strong>(270) 784-7248</strong></p>
+    <a class="button" href="mailto:laguta113@gmail.com">Send Email</a>
+
+    <form action="https://formsubmit.co/laguta113@gmail.com" method="POST"
+          class="contact-form">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="button">Send Message</button>
+    </form>
+  </section>
+
+  <div class="piano-footer">
+    <div class="white key"></div>
+    <div class="black key"></div>
+    <div class="white key"></div>
+    <div class="black key"></div>
+    <div class="white key"></div>
+    <div class="white key"></div>
+    <div class="black key"></div>
+    <div class="white key"></div>
   </div>
-</section>
 
-<section class="fade">
-  <h2>💰 Pricing</h2>
-  <ul>
-    <li>30-minute lesson — $30</li>
-    <li>45-minute lesson — $45</li>
-  </ul>
-  <p>Lessons are once or twice per week.</p>
-</section>
+  <footer>
+    <p>© 2025 Piano Lessons with Mary — Bowling Green, KY</p>
+  </footer>
 
-<section class="fade">
-  <h2>📍 Location & Format</h2>
-  <p>Lessons are in Bowling Green, KY at my home studio. Online lessons via Zoom are available.</p>
-</section>
+  <!-- IntersectionObserver fade-in (keeps) -->
+  <script>
+    const fadeEls = document.querySelectorAll('.fade');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
 
-<section class="fade">
-  <h2>✉️ Contact Me</h2>
-  <p>Email: <strong>laguta113@gmail.com</strong></p>
-  <p>Phone: <strong>(270) 784-7248</strong></p>
-  <a class="button" href="mailto:laguta113@gmail.com">Send Email</a>
+  <!-- Floating musical notes script (single, reliable implementation) -->
+  <script>
+    (function() {
+      const notes = ["♪","♫","🎵","🎶"];
 
-  <form action="https://formsubmit.co/laguta113@gmail.com" method="POST"
-        style="display:flex; flex-direction:column; gap:10px; max-width:400px; margin-top:25px; padding-bottom:150px;">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required style="min-height:120px;"></textarea>
-    <button type="submit" class="button">Send Message</button>
-  </form>
-</section>
+      // Create one note element and configure it
+      function spawnNote() {
+        const note = document.createElement('div');
+        note.className = 'note';
+        note.textContent = notes[Math.floor(Math.random() * notes.length)];
 
-<!-- Piano Keys -->
-<div class="piano-footer">
-  <div class="white key"></div>
-  <div class="black key"></div>
-  <div class="white key"></div>
-  <div class="black key"></div>
-  <div class="white key"></div>
-  <div class="white key"></div>
-  <div class="black key"></div>
-  <div class="white key"></div>
-</div>
+        // position and animation duration
+        note.style.left = (Math.random() * 100) + 'vw';
+        // Random duration between 5s and 9s
+        const duration = 5000 + Math.random() * 4000;
+        note.style.animationDuration = (duration / 1000) + 's';
 
-<footer>
-  <p>© 2025 Piano Lessons with Mary — Bowling Green, KY</p>
-</footer>
+        document.body.appendChild(note);
 
-<script>
-  const fadeEls = document.querySelectorAll('.fade');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) entry.target.classList.add('visible');
-    });
-  }, { threshold: 0.2 });
-  fadeEls.forEach(el => observer.observe(el));
-</script>
+        // remove after animation finishes + small buffer
+        setTimeout(() => {
+          note.remove();
+        }, duration + 500);
+      }
 
-<script>
-  const notes = ['🎵', '🎶', '♫'];
-  function createNote() {
-    const note = document.createElement('div');
-    note.classList.add('note');
-    note.textContent = notes[Math.floor(Math.random() * notes.length)];
-    note.style.left = Math.random() * window.innerWidth + "px";
-    note.style.animationDuration = (6000 + Math.random()*4000) + "ms";
-    document.body.appendChild(note);
-    setTimeout(() => note.remove(), 10000);
-  }
-  setInterval(createNote, 2000);
-</script>
+      // spawn a note every 700ms
+      const interval = setInterval(spawnNote, 700);
 
+      // optional: stop spawning when user navigates away
+      window.addEventListener('beforeunload', () => clearInterval(interval));
+    })();
+  </script>
 </body>
 </html>

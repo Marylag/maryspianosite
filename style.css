@@ -148,3 +148,35 @@ footer {
     background-position: center top !important;
   }
 }
+
+/* Notebook-style note cards */
+.note-card {
+  background: white;
+  padding: 35px 25px;
+  margin: 45px auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+  position: relative;
+  border: 1px solid #e1e1e1;
+
+  /* lined notebook paper effect */
+  background-image:
+    repeating-linear-gradient(
+      to bottom,
+      #ffffff 0px,
+      #ffffff 28px,
+      #d8e6ff 29px
+    );
+}
+
+/* Paper clip */
+.note-card::before {
+  content: "📎";
+  position: absolute;
+  top: -12px;
+  right: 18px;
+  font-size: 2rem;
+  transform: rotate(12deg);
+  opacity: 0.9;
+}

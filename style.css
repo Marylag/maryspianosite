@@ -50,15 +50,70 @@ body {
 }
 
 /* header, sections and other styles kept the same */
-header {
-  background: linear-gradient(135deg, #FFCBAA, #FFB48A);
-  color: #4B3B2F;
-  padding: 50px 20px;
+/* Soft Elegant Header */
+.soft-header {
+  background: linear-gradient(135deg, #FFE1CE, #FFC2A2);
+  padding: 20px;
   text-align: center;
+  color: #4B3B2F;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
-header h1 { margin: 0; font-size: 2.4rem; font-weight: 700; }
-header p { margin-top: 10px; font-size: 1.2rem; }
+.header-inner {
+  max-width: 900px;
+  margin: auto;
+}
+
+.soft-header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  font-size: 1.25rem;
+  margin-top: 18px;
+  opacity: 0.95;
+  font-weight: 500;
+}
+
+.underline {
+  width: 140px;
+  height: 6px;
+  background: #ffb48a;
+  margin: 15px auto 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(255,120,80,0.35);
+}
+
+/* Subtle floating notes around header */
+.soft-header::before,
+.soft-header::after {
+  content: "♫";
+  position: absolute;
+  font-size: 2rem;
+  color: rgba(255, 150, 120, 0.55);
+  animation: floatHeaderNotes 6s linear infinite;
+}
+
+.soft-header::before {
+  left: 12%;
+  top: 20px;
+  animation-delay: 0.8s;
+}
+
+.soft-header::after {
+  right: 10%;
+  bottom: 25px;
+  animation-delay: 1.7s;
+}
+
+@keyframes floatHeaderNotes {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0.9; }
+  100% { transform: translateY(-40px) rotate(40deg); opacity: 0; }
+}
 
 section { padding: 50px 20px; max-width: 900px; margin: auto; }
 
